@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Bienvenue sur le site gestion de ressource</h1>
+    </header>
+    
+    <main>
+        <article id="articles">
+            <!-- Articles chargé par le json -->
+             <button>Ajouter un article</button>
+             
+             <div class="ressources" id="ressources">
+
+             </div>
+        </article>
+
+        <form id="form" aria-labelledby="form-title">
+            <h2 id="form-title">Ajouter une ressource</h2>
+
+            <div>
+                <label for="title">Titre</label>
+                <input type="text" id="title" name="title" required>
+            </div>
+
+            <div>
+                <label for="category">Catégorie</label>
+                <input type="text" id="category" name="category" required>
+            </div>
+
+            <div>
+                <label for="description">Description</label>
+                <input type="text" id="description" name="description" required>
+            </div>
+
+            <div>
+                <label for="author">Auteur</label>
+                <input type="text" id="author" name="author" autocomplete="name" required>
+            </div>
+
+            <div>
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date">
+            </div>
+
+            <button type="submit">Enregistrer</button>
+        </form>
+
+    </main>
+
+    <footer>
+        footer
+    </footer>
+
+    <script src="js/form.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
