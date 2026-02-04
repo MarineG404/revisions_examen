@@ -31,11 +31,11 @@ form.addEventListener('submit', function(e) {
 
     form.reset();
     form.classList.add("hidden");
-
     displayRessources();
 });
 
 function displayForm(){
+    const main = document.querySelector('main');
     form.classList.toggle("hidden");
-    form.classList.add("form-flex");
+    form.classList.toggle("form-flex");
 }
