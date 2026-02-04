@@ -38,5 +38,69 @@
     "description": "Bases de la logique mathématique et démonstrations.",
     "author": "Service pédagogique",
     "date": "2024-11-20"
+  },
+  {
+    "id": 6,
+    "title": "Dérivées et applications",
+    "category": "analyse",
+    "description": "Calcul des dérivées et étude de fonctions.",
+    "author": "Service pédagogique",
+    "date": "2024-12-01"
+  },
+  {
+    "id": 7,
+    "title": "Intégrales définies",
+    "category": "analyse",
+    "description": "Introduction aux intégrales et calculs d'aires.",
+    "author": "Service pédagogique",
+    "date": "2024-12-10"
+  },
+  {
+    "id": 8,
+    "title": "Vecteurs et espaces vectoriels",
+    "category": "algebre",
+    "description": "Notions fondamentales sur les vecteurs et espaces vectoriels.",
+    "author": "Service pédagogique",
+    "date": "2025-01-05"
+  },
+  {
+    "id": 9,
+    "title": "Programmation orientée objet",
+    "category": "informatique",
+    "description": "Concepts de classes, objets et héritage en JavaScript.",
+    "author": "Service pédagogique",
+    "date": "2025-01-15"
+  },
+  {
+    "id": 10,
+    "title": "Algorithmes de base",
+    "category": "informatique",
+    "description": "Tri, recherche et complexité algorithmique.",
+    "author": "Service pédagogique",
+    "date": "2025-02-01"
+  },
+  {
+    "id": 11,
+    "title": "Suites numériques",
+    "category": "analyse",
+    "description": "Étude des suites arithmétiques et géométriques.",
+    "author": "Service pédagogique",
+    "date": "2025-02-10"
+  },
+  {
+    "id": 12,
+    "title": "Systèmes d'équations linéaires",
+    "category": "algebre",
+    "description": "Résolution de systèmes par différentes méthodes.",
+    "author": "Service pédagogique",
+    "date": "2025-02-20"
+  },
+  {
+    "id": 13,
+    "title": "Structures conditionnelles",
+    "category": "informatique",
+    "description": "Utilisation des conditions et boucles en programmation.",
+    "author": "Service pédagogique",
+    "date": "2025-03-01"
   }
 ]
