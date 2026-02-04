@@ -33,19 +33,26 @@ function displayRessources(){
     const allArticles = JSON.parse(localStorage.getItem("ressources"));
     const divArticles = document.getElementById("ressources");
 
+    if (!allArticles) return;
     divArticles.innerHTML = "";
 
     allArticles.forEach(item => {
         const newDiv = document.createElement("div");
         newDiv.className = "ressource-item";
         
-        newDiv.innerHTML = `<h3>${item.title}</h3>`;
-        const content = document.createElement("div")
-        content.className = "content";
-
-        content.innerHTML = `${item.category}`
-
-        newDiv.appendChild(content)
+        newDiv.innerHTML = `
+            <div class="card-header">
+                <h3 class="res-title">${item.title}</h3>
+                <span class="category-badge">${item.category}</span>
+            </div>
+            <div class="card-body">
+                <p class="res-description">${item.description}</p>
+            </div>
+            <div class="card-footer">
+                <span class="res-author">Par ${item.author}</span>
+                <span class="res-date">${item.date}</span>
+            </div>
+        `;
         
         divArticles.appendChild(newDiv);
     });
