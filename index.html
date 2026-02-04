@@ -12,44 +12,46 @@
     </header>
     
     <main>
-        <article id="articles" aria-label="articles">
-             <button onclick=displayForm() aria-label="add article">Ajouter un article</button>
+        <article id="articles" class="articles" aria-label="articles">
+            <div class="title">
+                <h2>Ressources</h2>
+                <button onclick=displayForm() aria-label="add article">Ajouter un article</button>
+            </div>
              
-             <div class="ressources" id="ressources"></div>
+            <div class="ressources" id="ressources"></div>
         </article>
-
-        <form id="form" aria-labelledby="form-title" class="hidden">
-            <h2 id="form-title">Ajouter une ressource</h2>
-
-            <div>
-                <label for="title">Titre</label>
-                <input type="text" id="title" name="title" required>
-            </div>
-
-            <div>
-                <label for="category">Catégorie</label>
-                <input type="text" id="category" name="category" required>
-            </div>
-
-            <div>
-                <label for="description">Description</label>
-                <input type="text" id="description" name="description" required>
-            </div>
-
-            <div>
-                <label for="author">Auteur</label>
-                <input type="text" id="author" name="author" autocomplete="name" required>
-            </div>
-
-            <div>
-                <label for="date">Date</label>
-                <input type="date" id="date" name="date">
-            </div>
-
-            <button type="submit">Enregistrer</button>
-        </form>
-
     </main>
+
+    <form id="form" aria-labelledby="form-title" class="hidden">
+        <h2 id="form-title">Ajouter une ressource</h2>
+
+        <div>
+            <label for="title">Titre</label>
+            <input type="text" id="title" name="title" required>
+        </div>
+
+        <div>
+            <label for="category">Catégorie</label>
+            <input type="text" id="category" name="category" required>
+        </div>
+
+        <div>
+            <label for="description">Description</label>
+            <input type="text" id="description" name="description" required>
+        </div>
+
+        <div>
+            <label for="author">Auteur</label>
+            <input type="text" id="author" name="author" autocomplete="name" required>
+        </div>
+
+        <div>
+            <label for="date">Date</label>
+            <input type="date" id="date" name="date">
+        </div>
+
+        <button type="submit">Enregistrer</button>
+    </form>
 
     <footer>
         footer
