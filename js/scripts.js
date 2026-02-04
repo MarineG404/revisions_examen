@@ -40,6 +40,12 @@ function displayRessources(){
         newDiv.className = "ressource-item";
         
         newDiv.innerHTML = `<h3>${item.title}</h3>`;
+        const content = document.createElement("div")
+        content.className = "content";
+
+        content.innerHTML = `${item.category}`
+
+        newDiv.appendChild(content)
         
         divArticles.appendChild(newDiv);
     });
