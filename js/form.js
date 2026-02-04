@@ -1,8 +1,21 @@
 const form = document.getElementById('form');
 
 form.addEventListener('submit', function(e) {
-    e.preventDefault(); 
-    
+    e.preventDefault();
+    const local_ressources = localStorage.getItem('ressources');
+
+    let allRessources = [];
+    if (storlocal_ressourcesed) {
+        try {
+            const parsed = JSON.parse(local_ressources);
+            if (Array.isArray(parsed)) allRessources = parsed;
+            else if (parsed) allRessources = [parsed];
+        } catch (err) {
+            console.warn('Could not parse stored ressources, resetting to empty array.', err);
+            allRessources = [];
+        }
+    }
+
     const newRessources = {
         title: document.getElementById('title').value,
         category: document.getElementById('category').value,
@@ -11,7 +24,10 @@ form.addEventListener('submit', function(e) {
         date: document.getElementById('date').value
     };
 
-    localStorage.setItem('ressources', JSON.stringify(newRessources));
+    allRessources.push(newRessources);
 
-    console.log("envrai c ok ")
+    localStorage.setItem('ressources', JSON.stringify(allRessources));
+    console.log('envoi ok', allRessources);
+
+    form.reset();
 });
