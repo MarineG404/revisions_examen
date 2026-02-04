@@ -30,5 +30,12 @@ form.addEventListener('submit', function(e) {
     console.log('envoi ok', allRessources);
 
     form.reset();
+    form.classList.add("hidden");
+
     displayRessources();
 });
+
+function displayForm(){
+    form.classList.toggle("hidden");
+    form.classList.add("form-flex");
+}

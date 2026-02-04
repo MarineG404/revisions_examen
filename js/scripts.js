@@ -31,7 +31,7 @@ async function loadRessources(){
 
 function displayRessources(){
     const allArticles = JSON.parse(localStorage.getItem("ressources"));
-    const divArticles = document.getElementById("articles");
+    const divArticles = document.getElementById("ressources");
 
     divArticles.innerHTML = "";
 

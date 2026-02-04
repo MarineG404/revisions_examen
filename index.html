@@ -12,16 +12,13 @@
     </header>
     
     <main>
-        <article id="articles">
-            <!-- Articles chargé par le json -->
-             <button>Ajouter un article</button>
+        <article id="articles" aria-label="articles">
+             <button onclick=displayForm() aria-label="add article">Ajouter un article</button>
              
-             <div class="ressources" id="ressources">
-
-             </div>
+             <div class="ressources" id="ressources"></div>
         </article>
 
-        <form id="form" aria-labelledby="form-title">
+        <form id="form" aria-labelledby="form-title" class="hidden">
             <h2 id="form-title">Ajouter une ressource</h2>
 
             <div>
