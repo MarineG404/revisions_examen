@@ -121,7 +121,7 @@ main {
 }
 
 .hidden {
-    display: none !important; /* Force la disparition peu importe l'ID */
+    display: none !important;
 }
 
 #form {
@@ -130,13 +130,47 @@ main {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1000;
-
     background-color: white;
     padding: 30px;
-    border-radius: 20px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); 
-    border: 2px solid var(--primary);
-    
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    border: 1px solid #e0e0e0;
     width: 90%;
     max-width: 500px;
+
+    &.hidden {
+        display: none;
+    }
+
+    h2 {
+        margin: 0 0 24px 0;
+        font-size: 1.5rem;
+        color: #333;
+    }
+
+    > div {
+        margin-bottom: 16px;
+    }
+
+    label {
+        margin-bottom: 6px;
+        font-weight: 500;
+        color: #555;
+        font-size: 0.9rem;
+    }
+
+    input {
+        width: 100%;
+        padding: 10px 12px;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        font-size: 1rem;
+        transition: border-color 0.2s;
+        box-sizing: border-box;
+
+        &:focus {
+            outline: none;
+            border-color: #4a90e2;
+        }
+    }
 }
