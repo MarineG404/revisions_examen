@@ -5,7 +5,7 @@ form.addEventListener('submit', function(e) {
     const local_ressources = localStorage.getItem('ressources');
 
     let allRessources = [];
-    if (storlocal_ressourcesed) {
+    if (local_ressources) {
         try {
             const parsed = JSON.parse(local_ressources);
             if (Array.isArray(parsed)) allRessources = parsed;
@@ -30,4 +30,5 @@ form.addEventListener('submit', function(e) {
     console.log('envoi ok', allRessources);
 
     form.reset();
+    displayRessources();
 });
